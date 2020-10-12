@@ -8,7 +8,7 @@ import schedule
 # Wait for HWiNFO to be launched.
 time.sleep(20)
 
-homestats = InfluxDBClient(host='raspberrypi4bserver',database='homestats')
+homestats = InfluxDBClient(host='raspberrypi4bserver.local',database='homestats')
 hwinfo = HWiNFO.HwInfoRemote('127.0.0.1')
 
 def job():
